@@ -1,103 +1,105 @@
+import Link from "next/link";
+import Layout from "@/app/components/Layout";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <Layout>
+      <section id="hero" className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="md:flex md:items-center md:justify-between">
+            <div className="md:w-1/2">
+              <h2 className="text-4xl font-extrabold text-gray-900 sm:text-5xl">
+                Hi, I'm <span className="text-blue-600">Robert Lazar</span>
+              </h2>
+              <p className="mt-3 text-xl text-gray-500 sm:mt-5">
+                Im an industrial desgin student at the Technische Universiteit Eindhoven, currently in my first year and this would be my small place to fill with my projects and learning goals.
+              </p>
+              <div className="mt-8">
+              </div>
+            </div>
+            <div className="mt-8 md:mt-0 md:w-1/2">
+              <div className="w-64 h-64 mx-auto overflow-hidden rounded-full">
+                <img 
+                  src="/home/profile.jpeg" 
+                  alt="Robert Lazar" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      {/* Section for past/preset/future */}
+
+      <section id="child-1" className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-24">
+            <div className="flex flex-col md:flex-row items-center">
+              <div className="md:w-1/2 mb-8 md:mb-0 md:pr-12">
+                <div className="relative h-80 w-full rounded-lg overflow-hidden">
+                  <Image 
+                    src="/home/boombox.png" 
+                    alt="Past Journey" 
+                    className="object-contain"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    priority
+                  />
+                </div>
+              </div>
+              <div className="md:w-1/2">
+                <h2 className="text-2xl font-extrabold text-gray-900 mb-4">Past</h2>
+                <p className="font-medium text-gray-600">
+                Having previous experiences in both coding and electronics, I took a decision to try something different from my usual knowledge. Since I always designed elements for both myself and my friends in CAD modeling, I wanted to explore what Industrial Design could offer me. I had reviewed the curriculum prior to appliying for the bachelor and it aligned with my expectations of what I can imagine myself doing.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-col md:flex-row-reverse items-center">
+              <div className="md:w-1/2 mb-8 md:mb-0 md:pl-12">
+                <div className="relative h-80 w-full rounded-lg overflow-hidden">
+                  <Image 
+                    src="/home/present.jpeg" 
+                    alt="Present Focus" 
+                    className="object-cover"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+              </div>
+              <div className="md:w-1/2">
+                <h2 className="text-2xl font-extrabold text-gray-900 mb-4">Present</h2>
+                <p className="font-medium text-gray-600">
+                  Currently im in my firt year of Industrial Design, im still honing my electronics and coding expertise while appliying to these, a different perspective. Subjects like Human-Centered Design have taught me how different a problem can be approach, even from a designers perspective. It also helped me realised how to put the user as a first, and since I want to pursue a product design endeavour in the future this has brough quite an invaluable experience to me. This way im able to understand the client/user needs.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-col md:flex-row items-center">
+              <div className="md:w-1/2 mb-8 md:mb-0 md:pr-12">
+                <div className="relative h-80 w-full rounded-lg overflow-hidden">
+                  <Image 
+                    src="/home/.jpg" 
+                    alt="Future Vision" 
+                    className="object-cover"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+              </div>
+              <div className="md:w-1/2">
+                <h2 className="text-2xl font-extrabold text-gray-900 mb-4">Future</h2>
+                <p className="font-medium text-gray-600">
+                Looking ahead, I aim to complete my Industrial Design education while maintaining and expanding my technical capabilities in electronics and coding. I envision myself specializing in product design with a focus on networking technologies, creating devices that are both aesthetically pleasing and highly functional. My goal is to develop products that increase global access to the internet, helping to close the digital divide that currently limits 34% of the world's population from accessing this vital resource. By combining industrial design principles with technical knowledge, I hope to create intuitive, beautiful, and accessible technology that feels futuristic yet remains approachable for all users.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    </Layout>
   );
 }
