@@ -367,8 +367,8 @@ export default function CBL1Project() {
           whileHover={{ x: 5 }}
           transition={{ duration: 0.2 }}
         >
-          <Link href="/projects/cbl2" className="inline-flex items-center text-blue-600 hover:text-blue-800 ml-auto">
-            Next: CBL - Project 2
+          <Link href="" className="inline-flex items-center text-blue-600 hover:text-blue-800 ml-auto">
+            Next: CBL - Project 2 (WIP)
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>

@@ -62,11 +62,11 @@ export default function DevelopmentAndVision() {
                   </p>
 
                   <p className="mb-6 text-neutral-600">
-                    What I genuinely enjoy doing is diving deep into the technical aspects of a project, experimenting with new materials and technologies, and then translating those findings into elegant, user-friendly designs. I find immense satisfaction in the process of bringing complex technical concepts to life through simple, intuitive interfaces.
+                    What I genuinely enjoy doing is diving deep into the technical aspects of a project, experimenting with new materials and technologies, and then translating those findings into elegant, user-friendly designs as an example this portofolio website made by me. I find immense satisfaction in the process of bringing complex technical concepts to life through simple, intuitive interfaces.
                   </p>
                   
                   <p className="mb-6 text-neutral-600">
-                    What sets me apart is my ability to bridge the gap between advanced technology and accessible design—creating products that feel futuristic yet remain intuitive to use. I approach challenges with flexibility, viewing constraints as opportunities to find creative technical solutions rather than limitations.
+                    What sets me apart is my ability to bridge the gap between advanced technology and accessible design, creating products that feel futuristic yet remain intuitive to use. I approach challenges with flexibility, viewing constraints as opportunities to find creative technical solutions rather than limitations although this sometime might be challenging.
                   </p>
                 </div>
               </div>
