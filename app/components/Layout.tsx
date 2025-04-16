@@ -26,7 +26,7 @@ export default function Layout({ children }: LayoutProps) {
               <Link href="/piv" className="text-gray-700 hover:text-gray-900">Professional Identity & Vision</Link>
               <Link href="/expertise_areas" className="text-gray-700 hover:text-gray-900">Expertise Areas</Link>
               <Link href="/projects" className="text-gray-700 hover:text-gray-900">Projects</Link>
-              <Link href="/contact" className="text-gray-700 hover:text-gray-900">Contact</Link>
+              {/*<Link href="/contact" className="text-gray-700 hover:text-gray-900">Contact</Link>*/}
             </div>
           </div>
         </div>
