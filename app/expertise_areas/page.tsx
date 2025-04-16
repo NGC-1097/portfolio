@@ -35,7 +35,8 @@ export default function Expertise_Areas() {
       Looking forward, I aim to further develop my personal design language while exploring how simplicity can be maintained even in increasingly complex products. I want to challenge myself to create designs that are not only visually clean but also emotionally resonant and meaningful to users.`,
       images: [
         { src: "/expertise_areas/2/1.jpeg", alt: "Magic machine workshop" },
-        { src: "/expertise_areas/2/2.jpeg", alt: "Enclouse P1 made out of carboard" }
+        { src: "/expertise_areas/2/2.jpeg", alt: "Enclouse P1 made out of carboard" },
+        { src: "/expertise_areas/2/3.jpeg", alt: "Some sketches of mine"}
       ]
     },
     {
@@ -80,7 +81,82 @@ export default function Expertise_Areas() {
     }
   ];
 
-  const activeExpertise = expertiseAreas.find(area => area.id === activeTab);
+  
+    const revisedExpertiseAreas = [
+      {
+          id: "business",
+          title: "Business and Entrepreneurship",
+          description: `Although Business and Entrepreneurship wasn't in my first year's curriculum, I've been really drawn to the entrepreneurial side of things, both at the TU/e and on my own.
+
+          For instance, I jumped into a project with a friend from Electrical Engineering for the TU/e contest. We're working with two others on using LiDAR to predict landslides. It's been a great learning experience on how to work with different disciplines and figuring out from the workshops how to build a business plan and how to approach the investors part.
+
+          On the side, I'm also pouring energy into a personal project that I have been wanting to create for quite some years that mixes coding, design, electronics, and user behavior into one product idea. This really drives home why I find Human-Centered Design so important and that's also why I want better understand the user.
+
+          So, I'm already trying to think like a designer who needs to make products people want, which is exactly what I want to do in the future. Looking ahead, I really want to get serious about validating my personal project idea, maybe by talking to the coaches who are already giving us tips during the TU/e contest. I have already had one coach that I felt in love with the feedback given, so when I have my business plan setup, I would try to approach him if he's willing to give any feedback back to me. Note to mention that I have already a partner with experience in the business aspect from another university for this project, which was quite some convincing.`,
+          images: [
+              { src: "/expertise_areas/1/1.jpg", alt: "LiDAR sensor concept" },
+              { src: "/expertise_areas/1/2.jpeg", alt: "Market plan workshop at contest" }
+          ]
+      },
+      {
+          id: "creativity",
+          title: "Creativity and Aesthetics",
+
+          description: `My design approach is all about simplicity without leaving features out, heavily influenced by Dieter Rams. For me, minimalism isn't just looks; it's about the harmony it brings when someone looks at a product. When I'm working on something, like the boombox on my homepage, I often picture the physical case, the feel, the materials, even the lighting features, and how the casing will interact based on the song being played at the moment,way before getting deep into the electronics.
+
+          Through my courses, I've picked up ways to express this. Sketching is essential for me to get ideas out quickly, and digital tools help me refine them. I've learned that good design feels natural and just works, needing a good plan to get there is what im working on getting both faster and with better quality.
+
+          I truly believe the best designs balance function and visual appeal, feeling intuitive. I try to strip away the extra stuff until only the essentials remain. Going forward, I want to keep developing my own design language. I plan to put together a personal style and design guidelines for myself by the end of this year to solidify my approach. I also want to tackle a project by next summer that really challenges me to keep things simple even when the tech inside gets complicated.`,
+          images: [
+              { src: "/expertise_areas/2/1.jpeg", alt: "Magic machine workshop" },
+              { src: "/expertise_areas/2/2.jpeg", alt: "Cardboard enclosure P1 prototype" },
+              { src: "/expertise_areas/2/3.jpeg", alt: "Some of my design sketches"}
+          ]
+      },
+      {
+          id: "math",
+          title: "Math, Data and Computing",
+          description: `I see Math and Physics as the backbone that makes my designs strong and functional. Understanding these helps me make stuff that not only looks good but is built right and uses the right materials, whether it's a quick prototype or a finished design meant to last.
+
+          My Python background gave me a head start, but the Data Analysis course really broadened my horizon. Learning how to properly filter, analyze, and then visualize data with tools like pandas and seaborn was a game-changer. It taught me how important it is to plan out how you'll handle data to get meaningful insights.
+
+          These skills help me connect the technical side with the visual design side in my projects. Moving forward, I want to get better at using data to back up my design choices. For my next big project, I aim to use these analysis skills to really dig into user feedback and present the findings visually by next Demo day of P2. I'm also curious about machine learning, so I plan to take an online intro course by the end of the semester to see how it might apply better improving the products I design or help to desing.`,
+          images: [
+              { src: "/expertise_areas/3/1.png", alt: "Data Analysis graph using Seaborn" },
+              { src: "/expertise_areas/3/2.jpeg", alt: "Paper bridge built for physics class" },
+          ]
+      },
+      {
+          id: "technology",
+          title: "Technology and Realization",
+          description: `Okay, when it comes to technology, this is what I'm truly passionate about. I always push myself on the tech aspects of projects, alone or in groups. From 3D CAD and coding to electronics design and soldering things together, I love using tech to make designs better. I even designed custom PCBs for my P1 project just to make the electronics cleaner and more compact to our case design.
+
+          Because of this, I never hesitate to learn a new programming language, tool, or skill if it helps. Creative Programming was a new thing, it showed me how code and math can create cool design elements and how there's beauty in logic. Getting my P1 prototype working involved a lot of planning to make sure the tech parts fit together.
+
+          These skills have helped me a lot in my own projects and in group projects. I'm definitely going to keep learning new tech skills. Specifically, I want to get really good at complex designs in Solidworks for my next portfolio piece by the end of this year at best. I also plan to build a prototype using an ESP32 or similar microcontroller, making it respond to sensors, and document it properly online by the end of this year. Being good with tech just makes it easier to turn cool ideas into reality. And imagination into something tangible.`,
+          images: [
+              { src: "/expertise_areas/4/1.png", alt: "3D view of my PCB design" },
+              { src: "/expertise_areas/4/2.png", alt: "Schematic of the main chip section" },
+              { src: "/expertise_areas/4/3.jpg", alt: "Final prototype for P1" }
+          ]
+      },
+      {
+        id: "society",
+        title: "User and Society",
+        description: `To me, User & Society is all about understanding people to make better designs. My studies, especially 'Human-Centered Design,' has taught me really useful ways to do this, like the Wizard of Oz technique to test ideas early, and how valuable quick, low-fi prototypes are for feedback.
+
+        Doing user studies is now a core part of how I design. I learned you have to think carefully about how you run these studies, not just collecting data, but also being ethical about privacy and respecting people. It made me realize the responsibility we have as designers and the concerns people might have with their information.
+
+        This is crucial to me personally, as I'm actively working on launching my own startup. The plan is to incorporate the company this June (2025) and dedicate the summer to heavy prototyping. To make sure we're building the right thing, I aim to run detailed usability tests with at least 10 potential users during this summer prototyping phase. The goal is then to release the first iteration or start building serious hype around Christmas 2025.
+        Alongside this intense practical work, I also want to spend some time researching and writing a short piece by December about adapting user research for different cultural and socio-economic contexts, to keep broadening my perspective.`,
+        images: [
+             { src: "/expertise_areas/5/1.png", alt: "Persona #1 based on user interviews" },
+             { src: "/expertise_areas/5/2.png", alt: "Persona #2 based on user interviews" },
+        ]
+      }
+    ];
+
+  const activeExpertise = revisedExpertiseAreas.find(area => area.id === activeTab);
 
   return (
     <Layout>
@@ -91,7 +167,7 @@ export default function Expertise_Areas() {
           {/* Tab Navigation */}
           <div className="border-b border-gray-200 mb-8">
             <nav className="flex flex-wrap -mb-px">
-              {expertiseAreas.map((area) => (
+              {revisedExpertiseAreas.map((area) => (
                 <button
                   key={area.id}
                   onClick={() => setActiveTab(area.id)}

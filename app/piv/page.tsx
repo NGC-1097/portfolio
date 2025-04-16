@@ -34,7 +34,7 @@ export default function DevelopmentAndVision() {
                   </p>
                   
                   <p className="mb-4 text-neutral-600">
-                    What motivates me to pursue this endeavor is my insatiable aim to discover new ways to create products. From an early age, I was fascinated by technology, which has definitely shaped my entire life. What truly sparked something remarkable in me was discovering Apple's approach to design. I still remember the mesmerizing design of the original iPhone in 2007—the harmonious combination of elements and seamless technology integration awakened my passion for design.
+                    What motivates me to pursue this journey is my insatiable aim to discover new ways to create products. From an early age, I was fascinated by technology, which has definitely shaped my entire life. What truly sparked something remarkable in me was discovering Apple's approach to design. I still remember the mesmerizing design of the original iPhone in 2007, the harmonious combination of elements and seamless technology integration awakened my passion for design.
                   </p>
                   
                   <p className="mb-6 text-neutral-600">
@@ -47,6 +47,22 @@ export default function DevelopmentAndVision() {
                   
                   <p className="mb-6 text-neutral-600">
                     I value collaboration and believe diverse perspectives lead to stronger designs. In team settings, I naturally gravitate toward the technical implementation aspects, but I'm developing skills to contribute effectively to user research and concept development as well. I'm constantly seeking to expand my expertise in human-centered design methodologies while building upon my technical foundation.
+                  </p>
+
+                  <p className="mb-6 text-neutral-600">
+                    However, I am also aware of areas where I can improve. Time management is a huge a challenge for me, and I sometimes find myself hyper-focused on the technical aspects of a project, potentially overlooking design considerations. I've also noticed that my interest can dissapear when a topic doesn't immediately spark my curiosity, leading to occasional procrastination. Addressing these weaknesses is a considerable priority for me, and I'm actively working on strategies to enhance my time management, maintain a broader design perspective, and stay engaged across diverse projects even if these are boring or lack any interesting aproach to them.
+                  </p>
+
+                  <p className="mb-6 text-neutral-600">
+                    Specifically, to improve my time management, I've started implementing techniques like the Pomodoro method, but I find that active recall works best for me, Im also using digital task management tools like Trello to break down large projects into smaller, manageable tasks, this I also took into practice to use it also for my own personal tasks. I'm also scheduling dedicated time for user research and concept development to ensure a balanced approach to design. To combat procrastination, I'm focusing on finding the inherent interest in every project, even if it's initially challenging, and setting daily goals to maintain momentum.
+                  </p>
+
+                  <p className="mb-6 text-neutral-600">
+                    Looking forward, I am excited to explore the intersection of AI and networking technology, as I believe this will revolutionize how we connect and interact with the digital world. What truly triggers my passion is the potential to create products that not only solve practical problems but also inspire awe and wonder. I am driven by the idea of designing intuitive, futuristic devices that make cutting-edge technology accessible to everyone.
+                  </p>
+
+                  <p className="mb-6 text-neutral-600">
+                    What I genuinely enjoy doing is diving deep into the technical aspects of a project, experimenting with new materials and technologies, and then translating those findings into elegant, user-friendly designs. I find immense satisfaction in the process of bringing complex technical concepts to life through simple, intuitive interfaces.
                   </p>
                   
                   <p className="mb-6 text-neutral-600">
@@ -83,63 +99,26 @@ export default function DevelopmentAndVision() {
               </div>
               
               <div className="lg:w-2/3 p-8">
-                <h3 className="text-xl font-bold text-neutral-800 mb-4">Blending premium designs with functional technology</h3>
-                
+                <h3 className="text-xl font-bold text-neutral-800 mb-4">Blending Premium Designs with Functional Technology for a Connected Future</h3>
+
                 <div className="prose max-w-none text-neutral-600">
-                  <p className="mb-4">
-                    As a designer I want to create products that blend both the premium aspect and the useful aspect of design into one. 
-                    Since I like electronics, my objective is to combine both fields into powerful designs that change the landscape of 
-                    networking. As such, the world nowadays relies more and more on data, thus I want to empower the world to have access 
-                    to fast networking and access to the internet.
-                  </p>
-                  
-                  <p className="mb-6">
-                    Why I would want to do that? The answer is simple, nowadays with the creation of what we call internet, 
-                    many people are capable of inventions that no-one could even fathom to imagine. There's also a very big reason, 
-                    since the creation of internet only 66% of the population have access to this wonderful tool.
-                  </p>
-                  
-                  <p className="mb-6">
-                    I imagine a world where everybody has access to an infinite pool of information and is capable to drive 
-                    humanity to new horizons. The more brains that are thinking, the better this world would be. To achieve this, 
-                    I wish to create beautiful products that encompass my vision of industrial design oriented products and my love 
-                    for electronics into one, thus I want to be a product designer primarily but also an electrical engineer at the same time. 
-                    Combining both areas of expertise will make the products even better, and useful.
-                  </p>
-                  
-                  <p className="mb-8">
-                    As important as it might be, creating products that are futuristic in nature but people are able to use them 
-                    could also propel humanity into a more sci-fi world in which products, appliances, and everyday utilities 
-                    look more like the sci-fi movies we are seeing today.
-                  </p>
-                  
-                  <div className="bg-blue-50 p-6 rounded-lg border border-blue-100 mt-8">
-                    <h4 className="text-lg font-medium text-blue-900 mb-4">Competencies Being Developed</h4>
-                    <ul className="space-y-2 pl-0">
-                      <li className="flex items-center space-x-2">
-                        <div className="w-1.5 h-1.5 rounded-full bg-blue-600"></div>
-                        <span className="text-neutral-700">Dual expertise in electrical engineering and product design</span>
-                      </li>
-                      <li className="flex items-center space-x-2">
-                        <div className="w-1.5 h-1.5 rounded-full bg-blue-600"></div>
-                        <span className="text-neutral-700">User-centered research methodology for technology products</span>
-                      </li>
-                      <li className="flex items-center space-x-2">
-                        <div className="w-1.5 h-1.5 rounded-full bg-blue-600"></div>
-                        <span className="text-neutral-700">Advanced prototyping techniques for electronic products</span>
-                      </li>
-                      <li className="flex items-center space-x-2">
-                        <div className="w-1.5 h-1.5 rounded-full bg-blue-600"></div>
-                        <span className="text-neutral-700">Strategic thinking about global connectivity solutions</span>
-                      </li>
-                      <li className="flex items-center space-x-2">
-                        <div className="w-1.5 h-1.5 rounded-full bg-blue-600"></div>
-                        <span className="text-neutral-700">Emerging network technology analysis and implementation</span>
-                      </li>
-                    </ul>
-                  </div>
+                    <p className="mb-4">
+                        As a designer and engineer, my vision is to create products that seamlessly integrate premium aesthetics with cutting-edge functionality, particularly in the realm of networking technology. With the world's increasing reliance on data, I aim to develop solutions that democratize access to fast, reliable internet, empowering individuals and communities globally.
+                    </p>
+
+                    <p className="mb-6">
+                        My motivation stems from the belief that universal internet access is a catalyst for innovation and progress. Currently, only 66% of the world's population has access to this transformative tool, limiting the potential for global collaboration and knowledge sharing.
+                    </p>
+
+                    <p className="mb-6">
+                        I envision a future where everyone has access to an infinite pool of information, driving humanity towards new frontiers. To achieve this, I strive to design intuitive, technologically advanced products that bridge the gap between industrial design and electrical engineering. By combining these disciplines, I can create solutions that are not only beautiful but also profoundly useful.
+                    </p>
+
+                    <p className="mb-8">
+                        This vision extends beyond mere connectivity. I imagine a "connected ecosystem" where technology fosters collaboration and community, rather than isolation. In this future, everyday utilities and appliances seamlessly integrate with advanced networks, creating intuitive and user-friendly experiences. For example, imagine smart home systems that dynamically adjust to user needs, or interactive public spaces that facilitate real-time collaboration. By focusing on user-centered design, I aim to ensure that these technologies enhance human interaction and connection, rather than detract from it.
+                    </p>
                 </div>
-              </div>
+            </div>
             </div>
           </div>
         </div>

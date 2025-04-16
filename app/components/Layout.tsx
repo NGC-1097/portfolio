@@ -1,12 +1,17 @@
+"use client"
+
 import Link from "next/link";
 import { ReactNode } from "react";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 interface LayoutProps {
   children: ReactNode;
 }
 
 export default function Layout({ children }: LayoutProps) {
+  const pathname = usePathname();
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navigation */}
@@ -30,7 +35,15 @@ export default function Layout({ children }: LayoutProps) {
       {/* Page content */}
       <main>
         <AnimatePresence mode="wait">
-          {children}
+          <motion.div
+            key={pathname}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            {children}
+          </motion.div>
         </AnimatePresence>
       </main>
       

@@ -57,6 +57,7 @@ export default function Projects() {
               </motion.div>
 
               {/* Project Card 2 */}
+              {/*
               <motion.div 
                 className="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
                 initial={{ opacity: 0, y: 30 }}
@@ -85,6 +86,7 @@ export default function Projects() {
                   </div>
                 </div>
               </motion.div>
+             */}
           </div>
         </div>
       </motion.section>
