@@ -117,6 +117,43 @@ export default function DevelopmentAndVision() {
                     <p className="mb-8">
                         This vision extends beyond mere connectivity. I imagine a "connected ecosystem" where technology fosters collaboration and community, rather than isolation. In this future, everyday utilities and appliances seamlessly integrate with advanced networks, creating intuitive and user-friendly experiences. For example, imagine smart home systems that dynamically adjust to user needs, or interactive public spaces that facilitate real-time collaboration. By focusing on user-centered design, I aim to ensure that these technologies enhance human interaction and connection, rather than detract from it.
                     </p>
+
+                    <p className="mb-10">
+                      How each expertise areas empowers my future vision as a designer:
+                    </p>
+
+                    <ul className="space-y-6 pl-6 text-neutral-600 mb-12">
+                    {[
+                      {
+                        title: "User & Society",
+                        content: "I will conduct regular ethnographic interviews and Wizard of Oz tests, leveraging Human-Centered Design methodologies to gather deep user insights ethically, respecting their privacy and confidentiality. These insights will directly inform and validate my product concepts, ensuring they truly resonate with user needs."
+                      },
+                      {
+                        title: "Math, Data and Computing",
+                        content: "I will use data analysis skills, such as data cleaning, aggregation, and visualization with Python tools like pandas and SeaBorn to interpret user feedback effectively. By clearly visualizing user data, I can rapidly identify important trends, user preferences, and outliners in the form of problems, this will lead into forming targeted design improvements."
+                      },
+                      {
+                        title: "Technology and Realization",
+                        content: "With my relative understanding at this point in time of physics and material science, I will meticulously choose durable materials that give the user a premium feeling and are long lasting. Leveraging iterative prototyping with advanced PCB design and efficient coding I can rapidly evolve designs towards their optimal performance in terms of hardware/software and outstanding user experience."
+                      },
+                      {
+                        title: "Creativity and Aesthetics",
+                        content: "Applying quick, experimental prototyping approaches like the Magic Machine Workshop that we had in CBL2 will help create intuitive and aesthetically refined products using act before though approach. Embracing iterative, low-fidelity methods initially will allow flexibility and innovation, ultimately evolving into simple, user-centered designs inspired by Dieter Rams minimalistic approach."
+                      },
+                      {
+                        title: "Business and Entrepreneurship",
+                        content: "By founding a my startup by June 2025, I will gain direct, practical experience in entrepreneurship, marketing, and product scaling. Utilizing insights from personal growth and entrepreneurial literature Iw ill translate innovative concepts into viable products and effectively be a successful “business entrepreneur”."
+                      }
+                    ].map((item, index) => (
+                      <li key={index} className="relative pl-6 before:absolute before:top-2 before:left-0 before:w-2 before:h-2 before:bg-blue-600 before:rounded-full">
+                        <h4 className="font-medium text-neutral-800 mb-2">{item.title}</h4>
+                        <p className="text-sm leading-relaxed">{item.content}</p>
+                      </li>
+                    ))}
+                  </ul>
+                    <p className="mb-14">
+                      Together, these interconnected expertise areas form the essential foundation for my future career as a product design, a future I want to aspire to become, capable of delivering transformative products that democratize access to technology globally.
+                    </p>
                 </div>
             </div>
             </div>
@@ -124,17 +161,6 @@ export default function DevelopmentAndVision() {
         </div>
       </section>
     </div>
-
-    
-      {/* Simple Call To Action 
-      <section className="py-12 bg-blue-600">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-2xl font-bold text-white mb-4">Let's connect!</h3>
-          <p className="text-blue-100 mb-8">I'm open to collaboration opportunities and project discussions</p>
-          <a href="/contact" className="inline-block px-6 py-3 border-2 border-white text-white font-medium rounded-md hover:bg-white hover:text-blue-600 transition-colors">Contact Me</a>
-        </div>
-      </section>
-      */}
     </Layout>
   );
 }
