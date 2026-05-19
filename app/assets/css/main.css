@@ -1,0 +1,229 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────────────────────
+   Ambient: BRIGHT  (day + light)  — default
+   Apple pure white canvas
+   ───────────────────────────────────────────── */
+:root,
+html.ambient-bright {
+  /* #ffffff pure white */
+  --background: 0 0% 100%;
+  /* #1d1d1f near-black ink */
+  --foreground: 240 2% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 2% 11%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 2% 11%;
+  /* #0066cc action blue */
+  --primary: 210 100% 40%;
+  --primary-foreground: 0 0% 100%;
+  /* #f5f5f7 parchment */
+  --secondary: 240 5% 96%;
+  --secondary-foreground: 240 2% 11%;
+  --muted: 240 5% 96%;
+  /* #7a7a7a ink-muted-48 */
+  --muted-foreground: 0 0% 48%;
+  /* light blue tint for accent bg */
+  --accent: 210 100% 96%;
+  --accent-foreground: 210 100% 32%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  /* #e0e0e0 hairline */
+  --border: 0 0% 88%;
+  --input: 0 0% 88%;
+  /* #0071e3 focus blue */
+  --ring: 211 100% 44%;
+  /* 18px — store/card radius */
+  --radius: 1.125rem;
+}
+
+/* ─────────────────────────────────────────────
+   Ambient: WARM  (night + light)
+   Apple parchment canvas — slightly richer at night
+   ───────────────────────────────────────────── */
+html.ambient-warm {
+  /* #f5f5f7 parchment */
+  --background: 240 5% 96%;
+  --foreground: 240 2% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 2% 11%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 2% 11%;
+  --primary: 210 100% 40%;
+  --primary-foreground: 0 0% 100%;
+  /* #f0f0f0 divider-soft as secondary bg */
+  --secondary: 0 0% 94%;
+  --secondary-foreground: 240 2% 11%;
+  --muted: 0 0% 94%;
+  --muted-foreground: 0 0% 48%;
+  --accent: 210 100% 95%;
+  --accent-foreground: 210 100% 32%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 88%;
+  --input: 0 0% 88%;
+  --ring: 211 100% 44%;
+  --radius: 1.125rem;
+}
+
+/* ─────────────────────────────────────────────
+   Ambient: DIMMED  (day + dark)
+   Apple near-black tile #272729
+   ───────────────────────────────────────────── */
+html.dark,
+html.dark.ambient-dimmed {
+  /* #272729 near-black tile-1 */
+  --background: 240 2% 16%;
+  --foreground: 0 0% 100%;
+  /* #2a2a2c near-black tile-2 */
+  --card: 240 2% 17%;
+  --card-foreground: 0 0% 100%;
+  --popover: 240 2% 17%;
+  --popover-foreground: 0 0% 100%;
+  /* #2997ff sky link blue for dark surfaces */
+  --primary: 211 100% 58%;
+  --primary-foreground: 240 2% 11%;
+  /* #252527 near-black tile-3 */
+  --secondary: 240 2% 15%;
+  /* #cccccc body-muted on dark */
+  --secondary-foreground: 0 0% 80%;
+  --muted: 240 2% 15%;
+  --muted-foreground: 0 0% 80%;
+  --accent: 211 50% 22%;
+  --accent-foreground: 211 100% 72%;
+  --destructive: 0 72% 55%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 2% 25%;
+  --input: 240 2% 25%;
+  --ring: 211 100% 58%;
+  --radius: 1.125rem;
+}
+
+/* ─────────────────────────────────────────────
+   Ambient: DARK  (night + dark)
+   Apple pure black — maximum depth
+   ───────────────────────────────────────────── */
+html.dark.ambient-dark {
+  /* #000000 pure black */
+  --background: 0 0% 0%;
+  /* #272729 near-black tile-1 for cards */
+  --card: 240 2% 16%;
+  --popover: 240 2% 16%;
+  --secondary: 240 2% 14%;
+  --muted: 240 2% 14%;
+  --border: 240 2% 22%;
+  --input: 240 2% 22%;
+}
+
+/* ─────────────────────────────────────────────
+   Base styles
+   ───────────────────────────────────────────── */
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply bg-background;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-size: 17px;
+    line-height: 1.47;
+    letter-spacing: -0.022em;
+  }
+
+  /* SF Pro Display — weight 600, negative tracking, Apple tight */
+  h1 {
+    @apply font-display font-semibold;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: -0.028em;
+  }
+
+  h2 {
+    @apply font-display font-semibold;
+    font-size: 40px;
+    line-height: 1.10;
+    letter-spacing: -0.011em;
+  }
+
+  h3 {
+    @apply font-display font-semibold;
+    font-size: 34px;
+    line-height: 1.47;
+    letter-spacing: -0.022em;
+  }
+
+  h4 {
+    @apply font-sans font-semibold;
+    font-size: 21px;
+    line-height: 1.19;
+    letter-spacing: 0.009em;
+  }
+
+  h5, h6 {
+    @apply font-sans font-semibold;
+    font-size: 17px;
+    line-height: 1.24;
+    letter-spacing: -0.022em;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Prose (markdown content)
+   ───────────────────────────────────────────── */
+.prose {
+  @apply text-foreground;
+}
+
+.prose h1 { @apply font-display font-semibold mt-12 mb-4; font-size: 40px; line-height: 1.10; letter-spacing: -0.011em; }
+.prose h2 { @apply font-display font-semibold mt-10 mb-3; font-size: 28px; line-height: 1.14; letter-spacing: 0; }
+.prose h3 { @apply font-display font-semibold mt-8 mb-2; font-size: 21px; line-height: 1.19; letter-spacing: 0.009em; }
+.prose p  { @apply text-muted-foreground leading-relaxed mb-4; }
+.prose ul { @apply list-none pl-0 space-y-2; }
+.prose ul li { @apply relative pl-5; }
+.prose ul li::before { content: '—'; @apply absolute left-0 text-muted-foreground; }
+.prose ol { @apply list-decimal pl-5 space-y-2; }
+.prose ol li { @apply text-muted-foreground leading-relaxed; }
+.prose a  { @apply text-primary underline-offset-4 hover:underline; }
+.prose strong { @apply text-foreground font-medium; }
+.prose code { @apply font-mono text-sm bg-muted px-1.5 py-0.5 rounded; }
+.prose pre  { @apply bg-muted rounded-lg p-4 overflow-x-auto my-6; }
+.prose blockquote {
+  @apply border-l-2 border-primary pl-4 italic text-muted-foreground my-6;
+}
+
+/* ─────────────────────────────────────────────
+   Page transitions
+   ───────────────────────────────────────────── */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-6px);
+}
+
+/* ─────────────────────────────────────────────
+   Utility classes
+   ───────────────────────────────────────────── */
+.section-divider {
+  @apply border-t border-border my-16;
+}
+
+.label {
+  @apply font-sans text-sm font-semibold text-muted-foreground;
+  letter-spacing: -0.016em;
+}
