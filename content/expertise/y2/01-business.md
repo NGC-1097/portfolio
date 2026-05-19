@@ -4,10 +4,10 @@ order: 1
 year: 2
 level: 3
 images:
-    - /expertise/y2/1/1.JPG
-    - /expertise/y2/1/2.JPEG
-    - /expertise/y2/1/3.JPEG
-    - /expertise/y2/1/4.JPEG
+    - /expertise/y2/1/1.jpg
+    - /expertise/y2/1/2.jpeg
+    - /expertise/y2/1/3.jpeg
+    - /expertise/y2/1/4.jpeg
 summary: "My entrepreneur mind has always wanted to create something, for someone, and for some price. This creative mind of mine will always find ways to create products, even impossible ones."
 ---
 Business and Entrepreneurship wasn't formally in my year 1 curriculum, but I jumped into the TU/e contest with friends from Electrical Engineering to develop a LiDAR-based landslide prediction concept. The contest itself taught me how to build a business plan and think about investor positioning through its workshop track, and one coach gave me feedback I valued enough to plan returning to him with something more developed.
