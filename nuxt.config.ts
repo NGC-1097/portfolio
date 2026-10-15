@@ -15,14 +15,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@tresjs/nuxt',
     '@nuxtjs/google-fonts',
-    '@vueuse/motion/nuxt',
-    'shadcn-nuxt',
   ],
-
-  shadcn: {
-    prefix: '',
-    componentDir: './app/components/ui',
-  },
 
   colorMode: {
     classSuffix: '',
@@ -58,6 +51,8 @@ export default defineNuxtConfig({
   },
 
   content: {
+    // Node's built-in node:sqlite; better-sqlite3 has no prebuilds for Node 26.
+    experimental: { sqliteConnector: 'native' },
     build: {
       markdown: {
         toc: { depth: 3 },

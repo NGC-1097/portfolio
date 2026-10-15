@@ -8,7 +8,7 @@ cover: /projects/prism/cover.jpg
 gallery:
   - /projects/prism/01.jpg
   - /projects/prism/02.jpg
-status: pending
+status: 
 featured: false
 order: 5
 ---
